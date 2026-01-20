@@ -1,0 +1,1094 @@
+{
+  "system/modules": {
+    "items": [
+      {
+        "namespace": "uarm_02",
+        "pose": {
+          "x": 113.46713256835938,
+          "y": 301.943115234375,
+          "z": 105,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "conveyor_02",
+        "pose": {
+          "x": 127.36663818359375,
+          "y": 119.89558029174805,
+          "z": 58,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "container_02",
+        "pose": {
+          "x": 171.51388549804688,
+          "y": 503.4360656738281,
+          "z": 130.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "container_01",
+        "pose": {
+          "x": 390.9454650878906,
+          "y": 300.1460266113281,
+          "z": 130.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "dock_02",
+        "pose": {
+          "x": 917.8827514648438,
+          "y": 698.214111328125,
+          "z": 150.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -3.141592653589793
+        }
+      }
+    ]
+  },
+  "master/logs/execute_planned_path/info": {
+    "level": "INFO",
+    "func": "execute_planned_path",
+    "message": "Processing module 'uarm_01' in path"
+  },
+  "master/logs/execute_planned_path/debug": {
+    "level": "DEBUG",
+    "func": "execute_planned_path",
+    "message": "Transfer point set to: None"
+  },
+  "master/logs/execute_planned_path/warning": {
+    "level": "WARNING",
+    "func": "execute_planned_path",
+    "message": "Transport failed at current module, stopping execution"
+  },
+  "master/logs/search_for_box_in_starting_module_workspace/warning": {
+    "level": "WARNING",
+    "func": "search_for_box_in_starting_module_workspace",
+    "message": "No box found in workspace of 'container_01'"
+  },
+  "mmh_cam/detected_markers": {
+    "header": {
+      "timestamp": 1751644255.8158174,
+      "module_id": "1",
+      "correlation_id": "c3ca00bb-ff1e-4c4f-a2c3-53952428b802",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "fiducials": [
+      {
+        "id": 0,
+        "relative_pose": {
+          "x": 617.4288940429688,
+          "y": 847.2999877929688,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -1.5610756874084473
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 17,
+        "relative_pose": {
+          "x": 845.3827514648438,
+          "y": 773.214111328125,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 3.076364517211914
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 18,
+        "relative_pose": {
+          "x": 842.55224609375,
+          "y": 622.8604736328125,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 3.1134469509124756
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 19,
+        "relative_pose": {
+          "x": 954.6430053710938,
+          "y": 622.1201171875,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -3.131653070449829
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 25,
+        "relative_pose": {
+          "x": 154.51388549804688,
+          "y": 424.4360656738281,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.03349796310067177
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 22,
+        "relative_pose": {
+          "x": 233.0733642578125,
+          "y": 353.908447265625,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.001779342768713832
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 24,
+        "relative_pose": {
+          "x": 231.30703735351562,
+          "y": 247.08880615234375,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.03838663920760155
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 7,
+        "relative_pose": {
+          "x": 23.058839797973633,
+          "y": 50.93657684326172,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.006974284537136555
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 9,
+        "relative_pose": {
+          "x": 154.35800170898438,
+          "y": 383.76483154296875,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.0717487782239914
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 23,
+        "relative_pose": {
+          "x": 359.3561096191406,
+          "y": 359.50177001953125,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.03509409353137016
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 4,
+        "relative_pose": {
+          "x": 780.637451171875,
+          "y": 45.030582427978516,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.00697419373318553
+        },
+        "type": "aruco"
+      }
+    ]
+  },
+  "mmh_cam/detected_boxes": {
+    "header": {
+      "timestamp": 1751644255.8164246,
+      "module_id": "1",
+      "correlation_id": "c3ca00bb-ff1e-4c4f-a2c3-53952428b802",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "boxes": [
+      {
+        "id": 0,
+        "color": "green",
+        "type": "small_box",
+        "global_pose": {
+          "x": 70.91129302978516,
+          "y": 520.795166015625,
+          "z": 15.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "id": 1,
+        "color": "red",
+        "type": "small_box",
+        "global_pose": {
+          "x": 147.32330322265625,
+          "y": 125.3018798828125,
+          "z": 47.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      }
+    ]
+  },
+  "base_01/base_module_visualization": {
+    "header": {
+      "timestamp": 1751644255.8519313,
+      "module_id": "0",
+      "correlation_id": "5db6013e-73ad-4359-8f8b-a97ab57056d0",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "modules": [
+      {
+        "namespace": "uarm_02",
+        "pose": {
+          "x": 113.46713256835938,
+          "y": 301.943115234375,
+          "z": 105,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "conveyor_02",
+        "pose": {
+          "x": 127.36663818359375,
+          "y": 119.89558029174805,
+          "z": 58,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "container_02",
+        "pose": {
+          "x": 171.51388549804688,
+          "y": 503.4360656738281,
+          "z": 130.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "container_01",
+        "pose": {
+          "x": 390.9454650878906,
+          "y": 300.1460266113281,
+          "z": 130.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "dock_02",
+        "pose": {
+          "x": 917.8827514648438,
+          "y": 698.214111328125,
+          "z": 150.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -3.141592653589793
+        }
+      }
+    ]
+  },
+  "base_01/order_request": {
+    "header": {
+      "timestamp": 1767958435.9942882,
+      "sender_id": "OrderGenerator",
+      "correlation_id": "c39a8221-190f-43d8-86cf-8a3c0deb4281"
+    },
+    "starting_module": {
+      "namespace": "conveyor_02",
+      "pose": {
+        "x": 127.36663818359375,
+        "y": 119.89558029174805,
+        "z": 58,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0
+      }
+    },
+    "goal": {
+      "namespace": "container_01",
+      "pose": {
+        "x": 390.9454650878906,
+        "y": 300.1460266113281,
+        "z": 130.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0
+      }
+    },
+    "cargo_box": {
+      "id": 1,
+      "color": "red",
+      "type": "small",
+      "global_pose": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "roll": 0,
+        "pitch": 0,
+        "yaw": 0
+      }
+    }
+  },
+  "base_01/order_request/response/21fcaa7e-918e-428e-b1a1-2e99105fb9e2": {
+    "header": {
+      "timestamp": 1751282278.442699,
+      "module_id": "0",
+      "correlation_id": "21fcaa7e-918e-428e-b1a1-2e99105fb9e2",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/de6aec0a-6151-4a72-a94b-8b64f88cd688": {
+    "header": {
+      "timestamp": 1751282550.16675,
+      "module_id": "0",
+      "correlation_id": "de6aec0a-6151-4a72-a94b-8b64f88cd688",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/382b283a-0b41-4ae7-8ea5-f712f69824e9": {
+    "header": {
+      "timestamp": 1751282710.3131406,
+      "module_id": "0",
+      "correlation_id": "382b283a-0b41-4ae7-8ea5-f712f69824e9",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": false,
+    "message": null
+  },
+  "base_01/order_request/response/23bb41c5-a7dc-4894-a783-82d375d135be": {
+    "header": {
+      "timestamp": 1751282751.1331,
+      "module_id": "0",
+      "correlation_id": "23bb41c5-a7dc-4894-a783-82d375d135be",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/bceb47a5-181a-4897-a387-d40034f3882e": {
+    "header": {
+      "timestamp": 1751285056.8937328,
+      "module_id": "0",
+      "correlation_id": "bceb47a5-181a-4897-a387-d40034f3882e",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/ef02c33f-c1e2-433d-afa2-513e6fe3c8e6": {
+    "header": {
+      "timestamp": 1751285128.7693517,
+      "module_id": "0",
+      "correlation_id": "ef02c33f-c1e2-433d-afa2-513e6fe3c8e6",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/4b26f0b7-ed68-4263-aba4-ea8190578626": {
+    "header": {
+      "timestamp": 1751286808.9456773,
+      "module_id": "0",
+      "correlation_id": "4b26f0b7-ed68-4263-aba4-ea8190578626",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/6df6bf85-1542-4354-b4f4-4a3418d205e8": {
+    "header": {
+      "timestamp": 1751287217.8836699,
+      "module_id": "0",
+      "correlation_id": "6df6bf85-1542-4354-b4f4-4a3418d205e8",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/b3e5fdd7-03bd-4245-becd-93b71b5a2ac1": {
+    "header": {
+      "timestamp": 1751287428.5822093,
+      "module_id": "0",
+      "correlation_id": "b3e5fdd7-03bd-4245-becd-93b71b5a2ac1",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/8458ef8b-ee40-486c-aff1-6c3ce668de1b": {
+    "header": {
+      "timestamp": 1751287434.1193225,
+      "module_id": "0",
+      "correlation_id": "8458ef8b-ee40-486c-aff1-6c3ce668de1b",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "master/state": {
+    "data": "online"
+  },
+  "base_01/order_request/response/a770b124-500e-4807-8627-732b22f8639e": {
+    "header": {
+      "timestamp": 1751632761.389584,
+      "module_id": "0",
+      "correlation_id": "a770b124-500e-4807-8627-732b22f8639e",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/2e0155f5-d07a-4ab6-9fdb-57f546b15119": {
+    "header": {
+      "timestamp": 1751633076.9813752,
+      "module_id": "0",
+      "correlation_id": "2e0155f5-d07a-4ab6-9fdb-57f546b15119",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/ca078f3d-5ccf-4a28-ac31-d78d95dc1c97": {
+    "header": {
+      "timestamp": 1751633484.37692,
+      "module_id": "0",
+      "correlation_id": "ca078f3d-5ccf-4a28-ac31-d78d95dc1c97",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/22738ca4-93a6-4fa8-bb85-9930dd41aa73": {
+    "header": {
+      "timestamp": 1751635838.0537467,
+      "module_id": "0",
+      "correlation_id": "22738ca4-93a6-4fa8-bb85-9930dd41aa73",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/e7b98913-7ea8-4be3-a4c6-58f78771ceba": {
+    "header": {
+      "timestamp": 1751637509.5088062,
+      "module_id": "0",
+      "correlation_id": "e7b98913-7ea8-4be3-a4c6-58f78771ceba",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/2ee885ef-b486-44e3-8a6a-41becc116949": {
+    "header": {
+      "timestamp": 1751637522.3417122,
+      "module_id": "0",
+      "correlation_id": "2ee885ef-b486-44e3-8a6a-41becc116949",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/4c3b4187-e7d0-44d3-98fa-2aa0484e6355": {
+    "header": {
+      "timestamp": 1751637750.9865334,
+      "module_id": "0",
+      "correlation_id": "4c3b4187-e7d0-44d3-98fa-2aa0484e6355",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/e7716c2b-3567-417c-b761-a8dd19d695af": {
+    "header": {
+      "timestamp": 1751637782.357847,
+      "module_id": "0",
+      "correlation_id": "e7716c2b-3567-417c-b761-a8dd19d695af",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/bca783d6-6855-44a8-a599-3cc502852607": {
+    "header": {
+      "timestamp": 1751637799.6754296,
+      "module_id": "0",
+      "correlation_id": "bca783d6-6855-44a8-a599-3cc502852607",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/586a1a07-9e40-446e-9332-fc229cc69365": {
+    "header": {
+      "timestamp": 1751637817.249115,
+      "module_id": "0",
+      "correlation_id": "586a1a07-9e40-446e-9332-fc229cc69365",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/f073477c-1d31-4d5a-bcb2-e22f45ea4e60": {
+    "header": {
+      "timestamp": 1751637998.6150024,
+      "module_id": "0",
+      "correlation_id": "f073477c-1d31-4d5a-bcb2-e22f45ea4e60",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": false,
+    "message": null
+  },
+  "base_01/order_request/response/4ca2e023-1c9e-4e2d-aceb-ab5972b37a06": {
+    "header": {
+      "timestamp": 1751638131.2002106,
+      "module_id": "0",
+      "correlation_id": "4ca2e023-1c9e-4e2d-aceb-ab5972b37a06",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/95017b83-d275-4f32-b6a3-1bdb10945e1e": {
+    "header": {
+      "timestamp": 1751638252.3623655,
+      "module_id": "0",
+      "correlation_id": "95017b83-d275-4f32-b6a3-1bdb10945e1e",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/07afdb3b-a00d-4d5b-9591-22dadfbb2685": {
+    "header": {
+      "timestamp": 1751638280.1998043,
+      "module_id": "0",
+      "correlation_id": "07afdb3b-a00d-4d5b-9591-22dadfbb2685",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/acde342e-1966-4fcc-9f16-a0cb95bd56c0": {
+    "header": {
+      "timestamp": 1751641761.7071054,
+      "module_id": "0",
+      "correlation_id": "acde342e-1966-4fcc-9f16-a0cb95bd56c0",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/a47f57ec-36f6-4934-9668-b0472f3e9b65": {
+    "header": {
+      "timestamp": 1751641869.5894227,
+      "module_id": "0",
+      "correlation_id": "a47f57ec-36f6-4934-9668-b0472f3e9b65",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/21d0c214-c5d5-4c47-bfc4-2dddc18f8fc4": {
+    "header": {
+      "timestamp": 1751641886.6328075,
+      "module_id": "0",
+      "correlation_id": "21d0c214-c5d5-4c47-bfc4-2dddc18f8fc4",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/aca7fa43-2200-48b0-b2a3-749455a463c7": {
+    "header": {
+      "timestamp": 1751642069.2403498,
+      "module_id": "0",
+      "correlation_id": "aca7fa43-2200-48b0-b2a3-749455a463c7",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/a250f543-be26-4306-8d8b-5138bcba3f29": {
+    "header": {
+      "timestamp": 1751642247.8356478,
+      "module_id": "0",
+      "correlation_id": "a250f543-be26-4306-8d8b-5138bcba3f29",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/a0006c5c-d0db-421e-88ab-aca89f29b20b": {
+    "header": {
+      "timestamp": 1751642263.3254204,
+      "module_id": "0",
+      "correlation_id": "a0006c5c-d0db-421e-88ab-aca89f29b20b",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/77b9b307-d8da-4468-9086-af097b8ca8b6": {
+    "header": {
+      "timestamp": 1751642293.098803,
+      "module_id": "0",
+      "correlation_id": "77b9b307-d8da-4468-9086-af097b8ca8b6",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/1860a1ea-d476-4ffb-98c2-3cbe72bf0571": {
+    "header": {
+      "timestamp": 1751642938.959504,
+      "module_id": "0",
+      "correlation_id": "1860a1ea-d476-4ffb-98c2-3cbe72bf0571",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/b3aaf150-fdc1-44d2-82fe-68a5303ce218": {
+    "header": {
+      "timestamp": 1751642959.338683,
+      "module_id": "0",
+      "correlation_id": "b3aaf150-fdc1-44d2-82fe-68a5303ce218",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/08a606fb-01af-49ee-b963-425fb6d4df24": {
+    "header": {
+      "timestamp": 1751643059.981028,
+      "module_id": "0",
+      "correlation_id": "08a606fb-01af-49ee-b963-425fb6d4df24",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/b8a76e5e-2790-4244-acea-722fca840c71": {
+    "header": {
+      "timestamp": 1751643065.9349706,
+      "module_id": "0",
+      "correlation_id": "b8a76e5e-2790-4244-acea-722fca840c71",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/6e7c3115-5fd3-41b9-8ba4-28b217e17d5e": {
+    "header": {
+      "timestamp": 1751643223.3991363,
+      "module_id": "0",
+      "correlation_id": "6e7c3115-5fd3-41b9-8ba4-28b217e17d5e",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/56b5fb7e-fbf9-4175-8bbf-7032a62b06ee": {
+    "header": {
+      "timestamp": 1751643353.1846416,
+      "module_id": "0",
+      "correlation_id": "56b5fb7e-fbf9-4175-8bbf-7032a62b06ee",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": false,
+    "message": null
+  },
+  "base_01/order_request/response/ffafad1b-0ac3-44ac-9417-9d1949189912": {
+    "header": {
+      "timestamp": 1751643356.9652774,
+      "module_id": "0",
+      "correlation_id": "ffafad1b-0ac3-44ac-9417-9d1949189912",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": false,
+    "message": null
+  },
+  "base_01/order_request/response/a308c2bd-fc77-49c2-8d39-111f56d99f3e": {
+    "header": {
+      "timestamp": 1751643519.2696085,
+      "module_id": "0",
+      "correlation_id": "a308c2bd-fc77-49c2-8d39-111f56d99f3e",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": true,
+    "message": null
+  },
+  "base_01/order_request/response/82b0c962-2730-4350-96db-3b86046a9fd1": {
+    "header": {
+      "timestamp": 1751643711.504636,
+      "module_id": "0",
+      "correlation_id": "82b0c962-2730-4350-96db-3b86046a9fd1",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/e13b2ae8-94de-4343-bedb-0c6688938945": {
+    "header": {
+      "timestamp": 1751643740.762527,
+      "module_id": "0",
+      "correlation_id": "e13b2ae8-94de-4343-bedb-0c6688938945",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/8e4f6421-66cb-4e58-aa35-ba143a41a49f": {
+    "header": {
+      "timestamp": 1751643912.3899643,
+      "module_id": "0",
+      "correlation_id": "8e4f6421-66cb-4e58-aa35-ba143a41a49f",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/bfb0f19d-872e-41aa-9109-f128a47758f9": {
+    "header": {
+      "timestamp": 1751643916.340302,
+      "module_id": "0",
+      "correlation_id": "bfb0f19d-872e-41aa-9109-f128a47758f9",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/af4222de-6fa6-4343-92f8-45a1310605d7": {
+    "header": {
+      "timestamp": 1751643919.4619403,
+      "module_id": "0",
+      "correlation_id": "af4222de-6fa6-4343-92f8-45a1310605d7",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/d218044c-424c-4b50-9cd7-8c69b1cb130f": {
+    "header": {
+      "timestamp": 1751643972.3575547,
+      "module_id": "0",
+      "correlation_id": "d218044c-424c-4b50-9cd7-8c69b1cb130f",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": false,
+    "message": null
+  },
+  "base_01/order_request/response/4500976d-815e-4586-aad3-a618738ab66d": {
+    "header": {
+      "timestamp": 1751644014.6182323,
+      "module_id": "0",
+      "correlation_id": "4500976d-815e-4586-aad3-a618738ab66d",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "success": null,
+    "message": null
+  },
+  "base_01/order_request/response/82653438-5682-459d-8b0f-22c34e023b76": {
+    "header": {
+      "correlation_id": "82653438-5682-459d-8b0f-22c34e023b76",
+      "timestamp": 1765723670.1432507,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/1b7874b3-7051-494c-894c-9dd94799dfa5": {
+    "header": {
+      "correlation_id": "1b7874b3-7051-494c-894c-9dd94799dfa5",
+      "timestamp": 1765757473.660937,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/d94681dd-80a1-4a6d-8819-7abf620f83cf": {
+    "header": {
+      "correlation_id": "d94681dd-80a1-4a6d-8819-7abf620f83cf",
+      "timestamp": 1765789843.6423566,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/eb931b8b-c775-40b1-9612-9e2cb768b3b7": {
+    "header": {
+      "correlation_id": "eb931b8b-c775-40b1-9612-9e2cb768b3b7",
+      "timestamp": 1766446213.231989,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/fb94fdef-4c11-442b-bf5b-c75843f669be": {
+    "header": {
+      "correlation_id": "fb94fdef-4c11-442b-bf5b-c75843f669be",
+      "timestamp": 1766446222.9631567,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/a5a720af-f3c6-444c-97bc-f84bfcfc8257": {
+    "header": {
+      "correlation_id": "a5a720af-f3c6-444c-97bc-f84bfcfc8257",
+      "timestamp": 1766446955.5536187,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/63d380a5-3813-463f-9401-66d64feb3734": {
+    "header": {
+      "correlation_id": "63d380a5-3813-463f-9401-66d64feb3734",
+      "timestamp": 1766452034.7784915,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/c44e14cd-1fe1-4da3-afbe-8f2b4e452489": {
+    "header": {
+      "correlation_id": "c44e14cd-1fe1-4da3-afbe-8f2b4e452489",
+      "timestamp": 1766452570.348075,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/d50b210c-6f96-479f-a1d8-9a13a342f088": {
+    "header": {
+      "correlation_id": "d50b210c-6f96-479f-a1d8-9a13a342f088",
+      "timestamp": 1766490632.4987087,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/fe8675a5-db7c-4488-b5e1-44d7d4d27e55": {
+    "header": {
+      "correlation_id": "fe8675a5-db7c-4488-b5e1-44d7d4d27e55",
+      "timestamp": 1766490760.9640996,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/8e44053d-bb75-4a95-9a25-b9872fdd7cc0": {
+    "header": {
+      "correlation_id": "8e44053d-bb75-4a95-9a25-b9872fdd7cc0",
+      "timestamp": 1767899143.322113,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/b4c0af28-872e-41ea-a660-389ec6f41243": {
+    "header": {
+      "correlation_id": "b4c0af28-872e-41ea-a660-389ec6f41243",
+      "timestamp": 1767899308.006559,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/d77d8e2e-5382-4ee1-a666-f098939d6a42": {
+    "header": {
+      "correlation_id": "d77d8e2e-5382-4ee1-a666-f098939d6a42",
+      "timestamp": 1767899326.5285738,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/e075213a-c10a-47e4-9fa1-54914b7044a9": {
+    "header": {
+      "correlation_id": "e075213a-c10a-47e4-9fa1-54914b7044a9",
+      "timestamp": 1767899572.11088,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/368ad7bb-dd5d-4c63-ab34-4cbd5d3cca69": {
+    "header": {
+      "correlation_id": "368ad7bb-dd5d-4c63-ab34-4cbd5d3cca69",
+      "timestamp": 1767899576.8199422,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/80849222-f768-4862-9db9-bcbccfeb9f42": {
+    "header": {
+      "correlation_id": "80849222-f768-4862-9db9-bcbccfeb9f42",
+      "timestamp": 1767899666.3036373,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/8bc6ab83-2a9d-476f-b28a-292acab4e5bb": {
+    "header": {
+      "correlation_id": "8bc6ab83-2a9d-476f-b28a-292acab4e5bb",
+      "timestamp": 1767902202.5444362,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/9120e711-0002-44fc-833d-fb2a28394121": {
+    "header": {
+      "correlation_id": "9120e711-0002-44fc-833d-fb2a28394121",
+      "timestamp": 1767902207.448653,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/85d5b9b8-a5ef-4645-bcda-32ff4e412d94": {
+    "header": {
+      "correlation_id": "85d5b9b8-a5ef-4645-bcda-32ff4e412d94",
+      "timestamp": 1767902271.5201123,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/3414dc4f-c953-44cb-a26f-6213918e2ac5": {
+    "header": {
+      "correlation_id": "3414dc4f-c953-44cb-a26f-6213918e2ac5",
+      "timestamp": 1767902278.2795346,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/d97c7431-cb05-433c-ae03-fc4d167b0ccf": {
+    "header": {
+      "correlation_id": "d97c7431-cb05-433c-ae03-fc4d167b0ccf",
+      "timestamp": 1767902371.1604595,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/8d064a27-d049-4478-9d0f-e1bf33105a2d": {
+    "header": {
+      "correlation_id": "8d064a27-d049-4478-9d0f-e1bf33105a2d",
+      "timestamp": 1767902483.6542091,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/525d7943-2d49-45a5-a672-7290d37dc756": {
+    "header": {
+      "correlation_id": "525d7943-2d49-45a5-a672-7290d37dc756",
+      "timestamp": 1767958397.153797,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/c39a8221-190f-43d8-86cf-8a3c0deb4281": {
+    "header": {
+      "correlation_id": "c39a8221-190f-43d8-86cf-8a3c0deb4281",
+      "timestamp": 1767958439.0125458,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  }
+}

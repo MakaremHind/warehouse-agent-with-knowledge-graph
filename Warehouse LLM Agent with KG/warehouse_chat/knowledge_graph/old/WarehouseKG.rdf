@@ -1,0 +1,1072 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg/"
+     xml:base="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:warehouse_kg="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg">
+        <rdfs:comment>Warehouse modules, boxes, states, and a toolbox of LLM agent tools for perception, planning, and order dispatch.</rdfs:comment>
+        <rdfs:label>Mini-Warehouse Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#expectsInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#expectsInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasNeighbor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasNeighbor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasPosition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Operational_State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasUnit">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#neighbor_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#neighbor_from">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#NeighborLink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#neighbor_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#neighbor_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#NeighborLink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#BoxID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#BoxID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#boxColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#boxColor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Conveyor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#hasWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Conveyor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#neighborDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#neighborDistance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#NeighborLink"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#pitch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#pitch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#roll -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#roll">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#x -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#x">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#y">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#yaw -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#yaw">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#z -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#z">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Active_Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Active_Module">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Passive_Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box_ID_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box_ID_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box_Pose_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box_Pose_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Color_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Color_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Container">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Passive_Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Conveyor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Conveyor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Active_Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Dock_Station -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Dock_Station">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Passive_Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Goal_Module_Namespace_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Goal_Module_Namespace_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Goal_Pose_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Goal_Pose_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Mobile_Robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Mobile_Robot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Active_Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Namespace_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Namespace_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#NeighborLink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#NeighborLink"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Operational_State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Operational_State"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Passive_Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Passive_Module">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Start_Module_Namespace_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Start_Module_Namespace_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Start_Pose_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Start_Pose_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#UArm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#UArm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Active_Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#X_Coordinate_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#X_Coordinate_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Y_Coordinate_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Y_Coordinate_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Z_Coordinate_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Z_Coordinate_Input">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function_Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#confirm_last_order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#confirm_last_order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#diagnose_failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#diagnose_failure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box_by_color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box_by_color">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_closest_module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_closest_module">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_last_order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_last_order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_module">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_boxes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_boxes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_orders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_orders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#master_status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#master_status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#plan_path -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#plan_path">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#trigger_order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#trigger_order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#trigger_order_by_modules -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#trigger_order_by_modules">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#trigger_order_by_poses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#trigger_order_by_poses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Failure_State -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Failure_State">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Operational_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Box_ID_for_find_box -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Box_ID_for_find_box">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box_ID_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Box_Pose_for_trigger_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Box_Pose_for_trigger_order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box_Pose_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Color_for_find_box_by_color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Color_for_find_box_by_color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Color_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Goal_NS_for_plan_path -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Goal_NS_for_plan_path">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Namespace_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Goal_NS_for_trigger_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Goal_NS_for_trigger_order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Goal_Module_Namespace_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Goal_Pose_for_trigger_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Goal_Pose_for_trigger_order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Goal_Pose_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Namespace_for_find_module -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Namespace_for_find_module">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Namespace_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Start_NS_for_plan_path -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Start_NS_for_plan_path">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Namespace_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Start_NS_for_trigger_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Start_NS_for_trigger_order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Namespace_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Start_Pose_for_trigger_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Start_Pose_for_trigger_order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Start_Pose_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_X_for_find_closest_module -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_X_for_find_closest_module">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#X_Coordinate_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Y_for_find_closest_module -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Y_for_find_closest_module">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Y_Coordinate_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Z_for_any_tool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Z_for_any_tool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Z_Coordinate_Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_Conveyor01_Offline_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_Conveyor01_Offline_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_Conveyor01_Online_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_Conveyor01_Online_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_container_01_Offline_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_container_01_Offline_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_container_01_Online_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_container_01_Online_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_container_02_Offline_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_container_02_Offline_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_container_02_Online_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_container_02_Online_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_dock_01_failure_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_dock_01_failure_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_dock_02_Offline_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_dock_02_Offline_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_dock_02_Online_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_dock_02_Online_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_uarm01_Offline_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_uarm01_Offline_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_uarm01_Online_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_uarm01_Online_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_uarm02_Offline_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_uarm02_Offline_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_uarm02_Online_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#MSI_uarm02_Online_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#ModuleStateInterval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#NL_conveyor01_container01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#NL_conveyor01_container01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#NeighborLink"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Offline_State -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Offline_State">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Operational_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Online_State -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Online_State">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Operational_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_box_0_green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_box_0_green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+        <warehouse_kg:pitch rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</warehouse_kg:pitch>
+        <warehouse_kg:roll rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</warehouse_kg:roll>
+        <warehouse_kg:x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.91129302978516</warehouse_kg:x>
+        <warehouse_kg:y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">520.795166015625</warehouse_kg:y>
+        <warehouse_kg:yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</warehouse_kg:yaw>
+        <warehouse_kg:z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</warehouse_kg:z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_box_1_red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_box_1_red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Position"/>
+        <warehouse_kg:pitch rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</warehouse_kg:pitch>
+        <warehouse_kg:roll rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</warehouse_kg:roll>
+        <warehouse_kg:x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">147.32330322265625</warehouse_kg:x>
+        <warehouse_kg:y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125.3018798828125</warehouse_kg:y>
+        <warehouse_kg:yaw rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</warehouse_kg:yaw>
+        <warehouse_kg:z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47.0</warehouse_kg:z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_container_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_container_01"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_container_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_container_02"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_conveyor_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_conveyor_02"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_dock_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_dock_02"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_uarm_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_uarm_02"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#box_0_green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#box_0_green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box"/>
+        <warehouse_kg:hasPosition rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_box_0_green"/>
+        <warehouse_kg:BoxID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</warehouse_kg:BoxID>
+        <warehouse_kg:boxColor>green</warehouse_kg:boxColor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#box_1_red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#box_1_red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Box"/>
+        <warehouse_kg:hasPosition rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_box_1_red"/>
+        <warehouse_kg:BoxID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</warehouse_kg:BoxID>
+        <warehouse_kg:boxColor>red</warehouse_kg:boxColor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#confirm_last_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#confirm_last_order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#confirm_last_order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Container"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_02"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#conveyor_02"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#uarm_02"/>
+        <warehouse_kg:hasPosition rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_container_01"/>
+        <warehouse_kg:hasState rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Online_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Container"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_01"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#conveyor_02"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#uarm_02"/>
+        <warehouse_kg:hasPosition rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_container_02"/>
+        <warehouse_kg:hasState rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Online_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#conveyor_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#conveyor_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Conveyor"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_01"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_02"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#uarm_02"/>
+        <warehouse_kg:hasPosition rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_conveyor_02"/>
+        <warehouse_kg:hasState rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Online_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#diagnose_failure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#diagnose_failure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#diagnose_failure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#dock_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#dock_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Dock_Station"/>
+        <warehouse_kg:hasState rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Failure_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#dock_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#dock_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Dock_Station"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_01"/>
+        <warehouse_kg:hasNeighbor rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#container_02"/>
+        <warehouse_kg:hasPosition rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_dock_02"/>
+        <warehouse_kg:hasState rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Online_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_boxes"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Box_ID_for_find_box"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box_by_color -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box_by_color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_box_by_color"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Color_for_find_box_by_color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_closest_module -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_closest_module">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_closest_module"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_X_for_find_closest_module"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Y_for_find_closest_module"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_last_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_last_order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_last_order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_module -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_module">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#find_module"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Namespace_for_find_module"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_boxes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_boxes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_boxes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_orders -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_orders">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#list_orders"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#master_status -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#master_status">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#master_status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#plan_path -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#plan_path">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#t_2025_11_01T000000Z -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#t_2025_11_01T000000Z">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#t_2025_11_10T091500Z -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#t_2025_11_10T091500Z">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#trigger_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#trigger_order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Callable_Function"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Box_ID_for_find_box"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Box_Pose_for_trigger_order"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Color_for_find_box_by_color"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Goal_NS_for_trigger_order"/>
+        <warehouse_kg:expectsInput rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Input_Start_NS_for_trigger_order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#uarm_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#uarm_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#UArm"/>
+        <warehouse_kg:hasState rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Offline_State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#uarm_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#uarm_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#UArm"/>
+        <warehouse_kg:hasPosition rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Pos_uarm_02"/>
+        <warehouse_kg:hasState rdf:resource="http://www.semanticweb.org/hindm/ontologies/2025/11/warehouse_kg#Online_State"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

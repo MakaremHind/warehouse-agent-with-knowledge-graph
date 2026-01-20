@@ -1,0 +1,455 @@
+{
+  "base_01/base_module_visualization": {
+    "header": {
+      "timestamp": 1751644255.8519313,
+      "module_id": "0",
+      "correlation_id": "5db6013e-73ad-4359-8f8b-a97ab57056d0",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "modules": [
+      {
+        "namespace": "uarm_02",
+        "pose": {
+          "x": 113.46713256835938,
+          "y": 301.943115234375,
+          "z": 105,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "conveyor_02",
+        "pose": {
+          "x": 127.36663818359375,
+          "y": 119.89558029174805,
+          "z": 58,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "container_02",
+        "pose": {
+          "x": 171.51388549804688,
+          "y": 503.4360656738281,
+          "z": 130.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "container_01",
+        "pose": {
+          "x": 390.9454650878906,
+          "y": 300.1460266113281,
+          "z": 130.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "dock_02",
+        "pose": {
+          "x": 917.8827514648438,
+          "y": 698.214111328125,
+          "z": 150.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -3.141592653589793
+        }
+      }
+    ]
+  },
+  "system/modules": {
+    "items": [
+      {
+        "namespace": "uarm_02",
+        "pose": {
+          "x": 113.46713256835938,
+          "y": 301.943115234375,
+          "z": 105,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "conveyor_02",
+        "pose": {
+          "x": 127.36663818359375,
+          "y": 119.89558029174805,
+          "z": 58,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "container_02",
+        "pose": {
+          "x": 171.51388549804688,
+          "y": 503.4360656738281,
+          "z": 130.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "container_01",
+        "pose": {
+          "x": 390.9454650878906,
+          "y": 300.1460266113281,
+          "z": 130.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "namespace": "dock_02",
+        "pose": {
+          "x": 917.8827514648438,
+          "y": 698.214111328125,
+          "z": 150.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -3.141592653589793
+        }
+      }
+    ]
+  },
+  "master/state": {
+    "data": "online"
+  },
+  "mmh_cam/detected_markers": {
+    "header": {
+      "timestamp": 1751644255.8158174,
+      "module_id": "1",
+      "correlation_id": "c3ca00bb-ff1e-4c4f-a2c3-53952428b802",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "fiducials": [
+      {
+        "id": 0,
+        "relative_pose": {
+          "x": 617.4288940429688,
+          "y": 847.2999877929688,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -1.5610756874084473
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 17,
+        "relative_pose": {
+          "x": 845.3827514648438,
+          "y": 773.214111328125,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 3.076364517211914
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 18,
+        "relative_pose": {
+          "x": 842.55224609375,
+          "y": 622.8604736328125,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 3.1134469509124756
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 19,
+        "relative_pose": {
+          "x": 954.6430053710938,
+          "y": 622.1201171875,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -3.131653070449829
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 25,
+        "relative_pose": {
+          "x": 154.51388549804688,
+          "y": 424.4360656738281,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.03349796310067177
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 22,
+        "relative_pose": {
+          "x": 233.0733642578125,
+          "y": 353.908447265625,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.001779342768713832
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 24,
+        "relative_pose": {
+          "x": 231.30703735351562,
+          "y": 247.08880615234375,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.03838663920760155
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 7,
+        "relative_pose": {
+          "x": 23.058839797973633,
+          "y": 50.93657684326172,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.006974284537136555
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 9,
+        "relative_pose": {
+          "x": 154.35800170898438,
+          "y": 383.76483154296875,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.0717487782239914
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 23,
+        "relative_pose": {
+          "x": 359.3561096191406,
+          "y": 359.50177001953125,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.03509409353137016
+        },
+        "type": "aruco"
+      },
+      {
+        "id": 4,
+        "relative_pose": {
+          "x": 780.637451171875,
+          "y": 45.030582427978516,
+          "z": 0.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": -0.00697419373318553
+        },
+        "type": "aruco"
+      }
+    ]
+  },
+  "mmh_cam/detected_boxes": {
+    "header": {
+      "timestamp": 1751644255.8164246,
+      "module_id": "1",
+      "correlation_id": "c3ca00bb-ff1e-4c4f-a2c3-53952428b802",
+      "version": 1.0,
+      "duplicate": false
+    },
+    "boxes": [
+      {
+        "id": 0,
+        "color": "green",
+        "type": "small_box",
+        "global_pose": {
+          "x": 70.91129302978516,
+          "y": 520.795166015625,
+          "z": 15.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      },
+      {
+        "id": 1,
+        "color": "red",
+        "type": "small_box",
+        "global_pose": {
+          "x": 147.32330322265625,
+          "y": 125.3018798828125,
+          "z": 47.0,
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0
+        }
+      }
+    ]
+  },
+  "base_01/order_request": {
+    "header": {
+      "timestamp": 1767892914.2926908,
+      "sender_id": "OrderGenerator",
+      "correlation_id": "09b48fb8-ecd6-45ca-996c-4db5021d5363"
+    },
+    "starting_module": {
+      "namespace": "manual_pose_start",
+      "pose": "conveyor_02"
+    },
+    "goal": {
+      "namespace": "manual_pose_goal",
+      "pose": "container_02"
+    },
+    "cargo_box": {
+      "id": 7,
+      "color": "red",
+      "type": "small",
+      "global_pose": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "roll": 0,
+        "pitch": 0,
+        "yaw": 0
+      }
+    }
+  },
+  "base_01/order_request/response/84b6ec86-6743-46dc-929b-41414fc73da7": {
+    "header": {
+      "correlation_id": "84b6ec86-6743-46dc-929b-41414fc73da7",
+      "timestamp": 1766493630.9219291,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/61bdea57-811a-45b3-8059-0b629226987f": {
+    "header": {
+      "correlation_id": "61bdea57-811a-45b3-8059-0b629226987f",
+      "timestamp": 1766493707.051487,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/4206b388-e42e-4fd1-b8c1-2118cc54db08": {
+    "header": {
+      "correlation_id": "4206b388-e42e-4fd1-b8c1-2118cc54db08",
+      "timestamp": 1766493876.4825842,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/54274224-e376-4d71-978f-90d692de7adf": {
+    "header": {
+      "correlation_id": "54274224-e376-4d71-978f-90d692de7adf",
+      "timestamp": 1766494091.3009443,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/4f3d5615-4243-4902-832c-42ec6f6ff81f": {
+    "header": {
+      "correlation_id": "4f3d5615-4243-4902-832c-42ec6f6ff81f",
+      "timestamp": 1767891990.1657217,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/e58ec700-dc5b-48ce-864f-f785f3732763": {
+    "header": {
+      "correlation_id": "e58ec700-dc5b-48ce-864f-f785f3732763",
+      "timestamp": 1767892003.677591,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/65ae8445-7b2e-4435-a8ee-c2c37e2eeb65": {
+    "header": {
+      "correlation_id": "65ae8445-7b2e-4435-a8ee-c2c37e2eeb65",
+      "timestamp": 1767892257.129571,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/f236ecb2-cd09-46ba-9022-c6a007b1a30a": {
+    "header": {
+      "correlation_id": "f236ecb2-cd09-46ba-9022-c6a007b1a30a",
+      "timestamp": 1767892396.0430243,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/ddd3b712-6afa-4ad0-bd22-08411b69a466": {
+    "header": {
+      "correlation_id": "ddd3b712-6afa-4ad0-bd22-08411b69a466",
+      "timestamp": 1767892401.6986942,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/fef47373-8f95-4f50-a669-10604e20aa3f": {
+    "header": {
+      "correlation_id": "fef47373-8f95-4f50-a669-10604e20aa3f",
+      "timestamp": 1767892693.2739203,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/f222d500-0907-4a42-86b1-807ca543b033": {
+    "header": {
+      "correlation_id": "f222d500-0907-4a42-86b1-807ca543b033",
+      "timestamp": 1767892767.4947627,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/295881e5-811f-4dbe-b535-c3e0be6d963c": {
+    "header": {
+      "correlation_id": "295881e5-811f-4dbe-b535-c3e0be6d963c",
+      "timestamp": 1767892772.9133394,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/09b48fb8-ecd6-45ca-996c-4db5021d5363": {
+    "header": {
+      "correlation_id": "09b48fb8-ecd6-45ca-996c-4db5021d5363",
+      "timestamp": 1767892917.3128521,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  }
+}
