@@ -309,20 +309,34 @@
   },
   "base_01/order_request": {
     "header": {
-      "timestamp": 1767892914.2926908,
+      "timestamp": 1769512466.559216,
       "sender_id": "OrderGenerator",
-      "correlation_id": "09b48fb8-ecd6-45ca-996c-4db5021d5363"
+      "correlation_id": "d63de1eb-be6d-49ee-bc00-0f93a8f6aef8"
     },
     "starting_module": {
-      "namespace": "manual_pose_start",
-      "pose": "conveyor_02"
+      "namespace": "conveyor_02",
+      "pose": {
+        "x": 127.36663818359375,
+        "y": 119.89558029174805,
+        "z": 58,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0
+      }
     },
     "goal": {
-      "namespace": "manual_pose_goal",
-      "pose": "container_02"
+      "namespace": "container_02",
+      "pose": {
+        "x": 171.51388549804688,
+        "y": 503.4360656738281,
+        "z": 130.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0
+      }
     },
     "cargo_box": {
-      "id": 7,
+      "id": 1,
       "color": "red",
       "type": "small",
       "global_pose": {
@@ -447,6 +461,24 @@
     "header": {
       "correlation_id": "09b48fb8-ecd6-45ca-996c-4db5021d5363",
       "timestamp": 1767892917.3128521,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/28f7279e-a12c-45ca-9afa-6107235684c0": {
+    "header": {
+      "correlation_id": "28f7279e-a12c-45ca-9afa-6107235684c0",
+      "timestamp": 1769512463.3622763,
+      "version": 1.0
+    },
+    "success": true,
+    "message": "Mock order finished successfully"
+  },
+  "base_01/order_request/response/d63de1eb-be6d-49ee-bc00-0f93a8f6aef8": {
+    "header": {
+      "correlation_id": "d63de1eb-be6d-49ee-bc00-0f93a8f6aef8",
+      "timestamp": 1769512469.5626454,
       "version": 1.0
     },
     "success": true,
